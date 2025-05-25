@@ -1,3 +1,6 @@
+import os
+from config import OPENAI_API_KEY
+os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 from agents.lead_agent import LeadAgent
 from agents.lead_organizer import LeadOrganizer
 from agents.research_agent import ResearchAgent
@@ -10,6 +13,7 @@ import os
 from datetime import datetime, timezone
 from config import OPENAI_API_KEY, SPREADSHEET_ID, CREDENTIALS_FILE
 import openai
+openai.api_key = OPENAI_API_KEY
 
 
 class SalesAgent:

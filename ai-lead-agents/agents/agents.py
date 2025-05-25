@@ -2,6 +2,9 @@ import os
 from dataclasses import dataclass
 from typing import Literal, Optional
 import openai
+import dotenv
+
+getenv = dotenv.load_dotenv("OPENAI_API_KEY")
 
 def web_search(query, user_location=None, search_context_size="medium"):
     # Simulate a web search result for demonstration
@@ -86,8 +89,8 @@ class Runner:
             ],
             tools=tools,
             tool_choice="auto",
-            max_tokens=300,
-            temperature=0.7,
+            max_tokens=200,
+            temperature=0.6,
         )
 
         message = response.choices[0].message
@@ -128,7 +131,7 @@ class Runner:
                     },
                     *tool_messages,
                 ],
-                max_tokens=600,
+                max_tokens=500,
                 temperature=0.7,
             )
             class Result:
