@@ -1,0 +1,16 @@
+# Google API dependencies
+google-auth
+google-auth-oauthlib
+google-api-python-client
+
+# Web scraping and automation
+playwright
+requests
+aiohttp
+beautifulsoup4
+
+# Data processing
+pandas
+
+# GUI
+PyQt6

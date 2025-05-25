@@ -1,0 +1,1 @@
+# This file initializes the types module, which can be used to define any custom types or interfaces needed for the project.
