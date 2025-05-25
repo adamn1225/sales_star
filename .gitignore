@@ -1,32 +1,29 @@
-# Virtual environment
-venv/
+# Virtual environments
 .venv/
+venv/
 ai-lead-agents/.venv/
-ai-lead-agents/.venv/
-# Python cache files
+ai-lead-agents/venv/
+
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
 
-# Sensitive configuration files
+# Sensitive config
 config.json
 credentials.json
+.env
 
-# Logs and temporary files
+# IDE/editor
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs/temp
 *.log
 *.tmp
 *.swp
 .DS_Store
-
-# IDE-specific files
-.vscode/
-.idea/
-
-# Jupyter Notebook checkpoints (if applicable)
-.ipynb_checkpoints/
-
-# System files
 Thumbs.db
-
-# environment variables
-.env
