@@ -1,6 +1,8 @@
 # Virtual environment
 venv/
 .venv/
+ai-lead-agents/.venv/
+ai-lead-agents/venv/
 # Python cache files
 __pycache__/
 *.pyc
