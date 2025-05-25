@@ -1,6 +1,6 @@
 # Virtual environment
 venv/
-
+.venv/
 # Python cache files
 __pycache__/
 *.pyc
@@ -25,3 +25,6 @@ credentials.json
 
 # System files
 Thumbs.db
+
+# environment variables
+.env
